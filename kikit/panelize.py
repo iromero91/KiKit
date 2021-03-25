@@ -124,7 +124,7 @@ def collectNetNames(board):
 
 def remapNets(collection, mapping):
     for item in collection:
-        item.SetNetCode(mapping[item.GetNetname()].GetNet())
+        item.SetNetCode(mapping[item.GetNetname()].GetNetCode())
 
 def toPolygon(entity):
     if isinstance(entity, list):
